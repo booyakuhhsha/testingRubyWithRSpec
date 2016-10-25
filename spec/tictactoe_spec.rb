@@ -34,6 +34,8 @@ describe Player do
 	context "when the player is created" do
 		it { expect(player1.name).to eql("Dom")}
 		it { expect(player1.marker).to eql("x")}
+		it { expect(player1.name).not_to eql("Cora") }
+      	it { expect(player1.marker).not_to eql("o") }
 	end
 
 end
